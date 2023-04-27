@@ -1,0 +1,57 @@
+/*!
+Theme Name: Halyard
+Theme URI: https://github.com/nielslange/halyard
+Author: Niels Lange
+Author URI: https://nielslange.de
+Description: A simple, clean and responsive theme for the Zeilklipper Waterman.
+Version: 1.0
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: halyard
+*/
+
+// -----------------------------------------------------------------------------
+// Utils: Variables, mixins, and functions for general use across the theme
+// -----------------------------------------------------------------------------
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/functions";
+
+// -----------------------------------------------------------------------------
+// Vendors: Third-party libraries and plugins
+// -----------------------------------------------------------------------------
+@import "vendors/font-awesome";
+
+// -----------------------------------------------------------------------------
+// Base: Global styles for reset, typography, colors, and other base elements
+// -----------------------------------------------------------------------------
+@import "base/reset";
+@import "base/typography";
+@import "base/colors";
+@import "base/base";
+
+// -----------------------------------------------------------------------------
+// Layout: Styles for the main layout components like header and footer
+// -----------------------------------------------------------------------------
+@import "layout/header";
+@import "layout/footer";
+@import "layout/grid";
+
+// -----------------------------------------------------------------------------
+// Components: Reusable UI components such as buttons, forms, and navigation
+// -----------------------------------------------------------------------------
+@import "components/buttons";
+@import "components/forms";
+@import "components/navigation";
+@import "components/alerts";
+
+// -----------------------------------------------------------------------------
+// Pages: Page-specific styles
+// -----------------------------------------------------------------------------
+@import "pages/home";
+
+// -----------------------------------------------------------------------------
+// Themes: Different color schemes and theme variations
+// -----------------------------------------------------------------------------
+@import "themes/theme";
+@import "themes/dark";

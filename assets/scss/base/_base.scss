@@ -1,0 +1,80 @@
+/* Base styles for common HTML elements */
+
+/* General typography */
+body {
+	background: $nord1;
+	color: $nord6;
+	font-family: $font-sans-primary;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+a {
+	color: $nord6;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+
+	&:focus,
+	&:hover {
+		border-bottom: 1px solid;
+		text-decoration: none;
+	}
+}
+
+abbr[title] {
+	text-decoration: none;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-sans-serif;
+	font-weight: 700;
+	margin: 1em 0;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+h6 {
+	font-size: 0.875em;
+}
+
+/* Paragraphs */
+p {
+	margin: 1em 0;
+}
+
+/* Links */
+
+/* Lists */
+ul,
+ol {
+	margin: 1em 0;
+	padding-left: 1.5em;
+}
+
+li {
+	margin-bottom: 0.5em;
+}
