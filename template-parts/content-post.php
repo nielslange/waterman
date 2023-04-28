@@ -12,8 +12,10 @@
 
 		<div class="entry-meta">
 			<?php
-			// You can customize the meta information (author, date, categories, etc.) displayed here
-			// For example, displaying the post date and author:
+			/**
+			 * You can customize the meta information (author, date, categories, etc.) displayed here
+			 * For example, displaying the post date and author:
+			 */
 			?>
 			<span class="posted-on"><?php echo get_the_date(); ?></span>
 			<span class="byline"><?php echo get_the_author(); ?></span>
@@ -35,8 +37,10 @@
 
 	<footer class="entry-footer">
 		<?php
-		// You can add post tags, categories or other meta information here
-		// For example, displaying post categories and tags:
+		/**
+		 * You can add post tags, categories or other meta information here
+		 * For example, displaying post categories and tags:
+		 */
 		?>
 		<div class="entry-categories">
 			<?php the_category( ', ' ); ?>
