@@ -1,0 +1,20 @@
+/* Footer */
+body > main {
+	// background-color: $secondary-background-color;
+	background-color: $nord6;
+	color: $nord2;
+	padding: 1em;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $nord2;
+	}
+
+	a {
+		color: $nord10;
+	}
+}

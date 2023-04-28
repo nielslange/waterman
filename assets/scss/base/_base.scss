@@ -7,10 +7,16 @@ body {
 	font-family: $font-sans-primary;
 	font-size: 1rem;
 	line-height: 1.5;
+
+	.container {
+		padding: 1em;
+		max-width: 900px;
+		margin: 0 auto;
+	}
 }
 
 a {
-	color: $tertiary-text-color;
+	color: $primary-text-color;
 	text-decoration: none;
 	border-bottom: 1px dotted;
 

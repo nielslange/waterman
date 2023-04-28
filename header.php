@@ -41,4 +41,5 @@
 				<div class="hamburger-menu"></div>
 			<?php endif; ?>
 		</div>
+		<div style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/assets/images/header.jpg' ); ?>');" class="header-image"></div>
 	</header>
