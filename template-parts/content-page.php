@@ -1,0 +1,32 @@
+<?php
+/**
+ * Template part for displaying pages
+ *
+ * @package Halyard
+ */
+
+?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<h1 class="entry-title"><?php the_title(); ?></h1>
+	</header>
+
+	<div class="entry-content">
+		<?php
+		the_content();
+
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'halyard' ),
+				'after'  => '</div>',
+			)
+		);
+		?>
+	</div>
+
+	<?php if ( get_edit_post_link() ) : ?>
+		<footer class="entry-footer">
+			<?php edit_post_link( esc_html__( 'Edit', 'halyard' ), '<span class="edit-link">', '</span>' ); ?>
+		</footer>
+	<?php endif; ?>
+</article>

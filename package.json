@@ -21,7 +21,6 @@
 		"@wordpress/stylelint-config": "21.14.0",
 		"eslint": "^8.37.0",
 		"node-sass": "8.0.0",
-		"nord": "^0.2.1",
 		"normalize.css": "^8.0.1",
 		"prettier": "npm:wp-prettier@^2.8.5",
 		"stylelint": "^15.6.0",

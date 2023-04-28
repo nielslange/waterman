@@ -2,15 +2,15 @@
 
 /* General typography */
 body {
-	background: $nord1;
-	color: $nord6;
+	background: $primary-background-color;
+	color: $primary-text-color;
 	font-family: $font-sans-primary;
 	font-size: 1rem;
 	line-height: 1.5;
 }
 
 a {
-	color: $nord6;
+	color: $tertiary-text-color;
 	text-decoration: none;
 	border-bottom: 1px dotted;
 
@@ -32,6 +32,7 @@ h3,
 h4,
 h5,
 h6 {
+	color: $secondary-text-color;
 	font-family: $font-sans-serif;
 	font-weight: 700;
 	margin: 1em 0;
