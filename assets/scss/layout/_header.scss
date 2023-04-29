@@ -6,10 +6,12 @@
 		align-items: center;
 		display: flex;
 		justify-content: space-between;
-		padding: 20px;
+		margin: auto;
+		max-width: 900px;
 
 		.site-logo {
 			margin: 0;
+			padding: 20px;
 
 			a {
 				border: none;
@@ -28,6 +30,10 @@
 			&.open {
 				background-image: url("assets/images/xmark-solid.svg");
 			}
+		}
+
+		#header-menu {
+			display: none;
 		}
 
 		#mobile-menu {
@@ -74,16 +80,73 @@
 	}
 
 	@media screen and (min-width: 768px) {
-		.hamburger-menu {
-			display: none;
-		}
+		.header-inner {
+			.hamburger-menu {
+				display: none;
+			}
 
-		#header-menu {
-			display: flex;
-		}
+			#header-menu {
+				display: block;
 
-		#mobile-menu {
-			display: none;
+				ul {
+					display: flex;
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+
+					li {
+						margin: 0;
+						padding: 0;
+						position: relative;
+
+						a {
+							border: none;
+							display: block;
+							padding: 20px 10px;
+						}
+
+						&.menu-item-has-children:hover {
+							ul {
+								display: block;
+							}
+						}
+
+						ul {
+							background-color: $nord1;
+							display: none;
+							min-width: 300px;
+							position: absolute;
+							z-index: 1;
+							border: 1px solid $nord0;
+							border-top: none;
+							border-bottom-left-radius: 5px;
+							border-bottom-right-radius: 5px;
+
+							li {
+								border-bottom: 1px solid $nord4;
+
+								&:hover {
+									background-color: $nord3;
+								}
+
+								&:last-child {
+									border-bottom: none;
+								}
+
+								a {
+									color: $nord4;
+									display: block;
+									padding: 10px 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			#mobile-menu {
+				display: none;
+			}
 		}
 	}
 }
