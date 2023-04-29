@@ -34,6 +34,7 @@ if ( ! function_exists( 'halyard_theme_setup' ) ) {
 		// Register menus.
 		register_nav_menus(array(
 			'header-menu' => 'Header Menu',
+			'mobile-menu' => 'Mobile Menu',
 			'footer-menu' => 'Footer Menu',
 		));
 	}
@@ -49,7 +50,8 @@ if ( ! function_exists( 'halyard_enqueue_scripts' ) ) {
 		wp_enqueue_style( 'halyard-style', get_stylesheet_uri(), array(), '1.0', 'all' );
 
 		// Enqueue custom script.
-		wp_enqueue_script( 'halyard-script', get_template_directory_uri() . '/assets/js/custom.js', array( 'jquery' ), '1.0', true );
+		wp_enqueue_script( 'halyard-script', get_template_directory_uri() . '/assets/js/menu.js', null, '1.0' );
+
 	}
 }
 add_action( 'wp_enqueue_scripts', 'halyard_enqueue_scripts' );

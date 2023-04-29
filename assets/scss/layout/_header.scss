@@ -1,13 +1,89 @@
 /* Header */
-body > header {
+#site-header {
 	background-color: $primary-background-color;
 
-	.header-image {
-		width: 100%;
-		height: 250px;
+	.header-inner {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+
+		.site-logo {
+			margin: 0;
+
+			a {
+				border: none;
+				font-size: 25px;
+				font-weight: 400;
+			}
+		}
+
+		.hamburger-menu {
+			background: url("assets/images/bars-solid.svg") no-repeat center / contain;
+			cursor: pointer;
+			filter: invert(96%) sepia(4%) saturate(1310%) hue-rotate(184deg) brightness(92%) contrast(99%);
+			height: 30px;
+			width: 30px;
+
+			&.open {
+				background-image: url("assets/images/xmark-solid.svg");
+			}
+		}
+
+		#mobile-menu {
+			display: none;
+		}
+	}
+
+	#mobile-menu.open {
+		background-color: $nord2;
 		display: block;
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
+		left: 0;
+		padding: 10px;
+		position: absolute;
+		right: 0;
+		top: 115px;
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin: 0;
+				padding: 0;
+
+				a {
+					border: none;
+					display: block;
+					padding: 10px 20px;
+				}
+
+				li a {
+					padding-left: 40px;
+				}
+			}
+		}
+	}
+
+	.header-image {
+		background: url("assets/images/header.jpg") center / cover no-repeat;
+		display: block;
+		height: 250px;
+		width: 100%;
+	}
+
+	@media screen and (min-width: 768px) {
+		.hamburger-menu {
+			display: none;
+		}
+
+		#header-menu {
+			display: flex;
+		}
+
+		#mobile-menu {
+			display: none;
+		}
 	}
 }
