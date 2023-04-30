@@ -13,8 +13,9 @@
  * @license GPL v2 or later
  */
 
-?><footer>
-	<div class="container">
+?>
+<footer id="site-footer">
+	<div class="footer-inner">
 		<?php if ( has_nav_menu( 'footer-menu' ) ) : ?>
 			<nav class="footer-menu">
 				<?php
@@ -22,12 +23,16 @@
 					'theme_location' => 'footer-menu',
 					'menu_id'        => 'footer-menu',
 					'container'      => '',
-					'items_wrap'     => '<ul>%3$s</ul>',
+					'items_wrap'     => '<ul class="footer-menu">%3$s</ul>',
 				));
 				?>
 			</nav>
 		<?php endif; ?>
-		<p>&copy; <?php echo esc_html( wp_date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. All rights reserved.</p>
+		<p class="footer-copyright">
+			&copy; <?php echo esc_html( wp_date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>.
+			<?php pll_e( 'All rights reserved.' ); ?>
+
+		</p>
 	</div>
 </footer>
 

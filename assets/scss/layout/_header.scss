@@ -8,10 +8,11 @@
 		justify-content: space-between;
 		margin: auto;
 		max-width: 900px;
+		padding: 0 10px;
 
 		.site-logo {
 			margin: 0;
-			padding: 20px;
+			padding: 13spx;
 
 			a {
 				border: none;
@@ -105,9 +106,22 @@
 							padding: 20px 10px;
 						}
 
-						&.menu-item-has-children:hover {
-							ul {
-								display: block;
+						&.menu-item-has-children {
+							> a::after {
+								content: "";
+								display: inline-block;
+								background: url("assets/images/caret-down-solid.svg") no-repeat;
+								filter: invert(96%) sepia(4%) saturate(1310%) hue-rotate(184deg) brightness(92%)
+									contrast(99%);
+								margin-left: 10px;
+								height: 15px;
+								width: 15px;
+							}
+
+							&:hover {
+								ul {
+									display: block;
+								}
 							}
 						}
 

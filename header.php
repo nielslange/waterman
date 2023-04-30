@@ -49,7 +49,7 @@
 						'container'      => '',
 						'items_wrap'     => '<ul>%3$s</ul>',
 					));
-					?>
+				?>
 				</nav>
 			<?php endif; ?>
 		</div>
