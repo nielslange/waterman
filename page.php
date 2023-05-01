@@ -11,7 +11,8 @@ get_header();
 ?>
 
 <main>
-	<div class="container">
+	<div class="main-inner">
+		<div class="main-content">
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -23,6 +24,14 @@ get_header();
 
 		endwhile;
 		?>
+		</div>
+		<div class="main-sidebar">
+			<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+				<aside id="secondary" class="widget-area">
+						<?php dynamic_sidebar( 'sidebar-1' ); ?>
+				</aside>
+			<?php endif; ?>
+		</div>
 	</div>
 </main>
 

@@ -29,9 +29,11 @@
 			</nav>
 		<?php endif; ?>
 		<p class="footer-copyright">
-			&copy; <?php echo esc_html( wp_date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>.
-			<?php pll_e( 'All rights reserved.' ); ?>
-
+			&copy; <?php echo esc_html( wp_date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?> &bull;
+			<?php pll_e( 'All rights reserved' ); ?> &bull;
+			<?php pll_e( 'Developed with' ); ?>
+			<acronym title="May 1, 2023 • Jakarta, Indonesia"><span class="fa-heart"></span></acronym>
+			<?php pll_e( 'by' ); ?> <a href="https://nielslange.de" target="_blank" rel="noopener">Niels Lange</a>
 		</p>
 	</div>
 </footer>

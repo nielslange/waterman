@@ -36,6 +36,16 @@ function halyard_theme_setup() {
 		'mobile-menu' => 'Mobile Menu',
 		'footer-menu' => 'Footer Menu',
 	));
+
+	register_sidebar( array(
+		'name'          => 'Sidebar',
+		'id'            => 'sidebar-1',
+		'description'   => 'Add widgets here to appear in your sidebar.',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'after_setup_theme', 'halyard_theme_setup' );
 
@@ -52,7 +62,8 @@ add_action( 'wp_enqueue_scripts', 'halyard_enqueue_scripts' );
  * Register Polylang translation strings.
  */
 function halyard_pll_register_string() {
-	pll_register_string( 'halyard-theme', 'All rights reserved.' );
-	pll_register_string( 'halyard-theme', 'Developed with %s by %s' );
+	pll_register_string( 'halyard-theme', 'All rights reserved' );
+	pll_register_string( 'halyard-theme', 'Developed with' );
+	pll_register_string( 'halyard-theme', 'by' );
 }
 add_action( 'init', 'halyard_pll_register_string' );

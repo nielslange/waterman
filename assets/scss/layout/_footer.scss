@@ -8,5 +8,15 @@
 		margin: auto;
 		max-width: 900px;
 		padding: 10px;
+		font-size: 15px;
+		font-weight: 100;
+
+		.fa-heart {
+			background: url("assets/images/heart-solid.svg") no-repeat center center;
+			display: inline-block;
+			filter: invert(72%) sepia(0%) saturate(3645%) hue-rotate(315deg) brightness(94%) contrast(97%);
+			height: 12px;
+			width: 12px;
+		}
 	}
 }
