@@ -19,6 +19,7 @@
 		"@wordpress/env": "5.15.0",
 		"@wordpress/prettier-config": "2.13.0",
 		"@wordpress/stylelint-config": "21.14.0",
+		"browser-sync": "2.29.1",
 		"eslint": "^8.37.0",
 		"node-sass": "8.0.0",
 		"nord": "0.2.1",
@@ -38,6 +39,7 @@
 		"phpcs": "composer run phpcs",
 		"phplint": "composer run phplint",
 		"stylelint": "stylelint 'assets/scss/**/*.scss'",
+		"sync": "browser-sync start --proxy 'https://zeilklipper-waterman.test'",
 		"watch": "npm run build && npm run build -- --watch",
 		"wp-env": "wp-env"
 	}
