@@ -1,0 +1,17 @@
+/* Ninja Forms */
+
+.nf-form-cont {
+	margin: 20px 0 0;
+
+	.nf-before-form-content,
+	.nf-after-form-content {
+		display: none;
+	}
+
+	.nf-field-element {
+		input,
+		textarea {
+			font-family: $font-sans-primary;
+		}
+	}
+}

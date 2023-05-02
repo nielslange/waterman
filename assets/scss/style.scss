@@ -18,11 +18,6 @@ Text Domain: halyard
 @import "utils/functions";
 
 // -----------------------------------------------------------------------------
-// Vendors: Third-party libraries and plugins
-// -----------------------------------------------------------------------------
-@import "vendors/font-awesome";
-
-// -----------------------------------------------------------------------------
 // Base: Global styles for reset, typography, colors, and other base elements
 // -----------------------------------------------------------------------------
 @import "base/reset";
@@ -50,3 +45,8 @@ Text Domain: halyard
 // Pages: Page-specific styles
 // -----------------------------------------------------------------------------
 @import "pages/home";
+
+// -----------------------------------------------------------------------------
+// Vendors: Third-party libraries and plugins
+// -----------------------------------------------------------------------------
+@import "vendors/ninja-forms";
