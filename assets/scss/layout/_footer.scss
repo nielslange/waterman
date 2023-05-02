@@ -11,6 +11,21 @@
 		font-size: 15px;
 		font-weight: 100;
 
+		.footer-menu {
+			display: inline;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			li {
+				display: inline;
+
+				&::after {
+					content: " \2022 ";
+				}
+			}
+		}
+
 		.icon-heart {
 			background: url("assets/images/heart-solid.svg") no-repeat center center;
 			display: inline-block;

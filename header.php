@@ -38,7 +38,7 @@
 					));
 					?>
 				</nav>
-				<?php endif; ?>
+			<?php endif; ?>
 			<div class="hamburger-menu" id="hamburger-menu" aria-label="Menu"></div>
 			<?php if ( has_nav_menu( 'mobile-menu' ) ) : ?>
 				<nav id="mobile-menu">
