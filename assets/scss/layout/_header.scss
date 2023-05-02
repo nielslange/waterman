@@ -8,7 +8,8 @@
 		justify-content: space-between;
 		margin: auto;
 		max-width: 900px;
-		padding: 0 10px;
+		padding: 0 20px;
+		height: 60px;
 
 		.site-logo {
 			margin: 0;
@@ -26,8 +27,9 @@
 			background: url("assets/images/bars-solid.svg") no-repeat center / contain;
 			cursor: pointer;
 			filter: invert(96%) sepia(4%) saturate(1310%) hue-rotate(184deg) brightness(92%) contrast(99%);
-			height: 30px;
-			width: 30px;
+			height: 24px;
+			width: 24px;
+			transition: background-image 0.3s ease-in-out;
 
 			&.open {
 				background-image: url("assets/images/xmark-solid.svg");
@@ -47,10 +49,10 @@
 		background-color: $nord2;
 		display: block;
 		left: 0;
-		padding: 10px;
+		padding: 20px 0;
 		position: absolute;
 		right: 0;
-		top: 115px;
+		top: 60px;
 
 		ul {
 			list-style-type: none;
@@ -164,4 +166,8 @@
 			}
 		}
 	}
+}
+
+.admin-bar #site-header #mobile-menu.open {
+	top: 106px;
 }

@@ -11,7 +11,7 @@ get_header();
 ?>
 
 <main>
-	<div class="container">
+	<div class="main-inner">
 		<section class="error-404 not-found">
 			<header class="page-header">
 				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can\'t be found.', 'halyard' ); ?></h1>

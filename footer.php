@@ -32,7 +32,7 @@
 			&copy; <?php echo esc_html( wp_date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?> &bull;
 			<?php pll_e( 'All rights reserved' ); ?> &bull;
 			<?php pll_e( 'Developed with' ); ?>
-			<acronym title="May 1, 2023 • Jakarta, Indonesia"><span class="fa-heart"></span></acronym>
+			<acronym title="May 1, 2023 • Jakarta, Indonesia"><span class="icon-heart"></span></acronym>
 			<?php pll_e( 'by' ); ?> <a href="https://nielslange.de" target="_blank" rel="noopener">Niels Lange</a>
 		</p>
 	</div>

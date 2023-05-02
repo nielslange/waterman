@@ -11,7 +11,7 @@ get_header();
 ?>
 
 <main>
-	<div class="container">
+	<div class="main-inner">
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -19,9 +19,9 @@ get_header();
 
 			the_post_navigation();
 
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			// if ( comments_open() || get_comments_number() ) :
+			// comments_template();
+			// endif;
 
 		endwhile;
 		?>

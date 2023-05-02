@@ -19,7 +19,7 @@ get_header();
 ?>
 
 <main>
-	<div class="container">
+	<div class="main-inner">
 		<?php
 		if ( have_posts() ) :
 			while ( have_posts() ) :

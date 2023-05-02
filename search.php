@@ -11,7 +11,7 @@ get_header();
 ?>
 
 <main>
-	<div class="container">
+	<div class="main-inner">
 		<?php if ( have_posts() ) : ?>
 			<header class="page-header">
 				<h1 class="page-title">
