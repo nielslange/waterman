@@ -14,4 +14,18 @@
 			font-family: $font-sans-primary;
 		}
 	}
+
+	.label-right .field-wrap {
+		flex-direction: column;
+
+		.nf-field-label label {
+			font-size: 16px;
+			font-weight: 200;
+		}
+
+		.nf-field-description {
+			font-size: 15px;
+			margin-top: 10px;
+		}
+	}
 }
