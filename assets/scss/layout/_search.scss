@@ -1,0 +1,12 @@
+/* Search */
+main#search {
+	background-color: $nord6;
+	color: $nord2;
+
+	.main-inner {
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: 768px) {
+	}
+}

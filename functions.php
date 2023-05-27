@@ -40,7 +40,6 @@ function halyard_theme_setup() {
 	register_sidebar( array(
 		'name'          => 'Sidebar',
 		'id'            => 'sidebar-1',
-		'description'   => 'Add widgets here to appear in your sidebar.',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -53,8 +52,11 @@ add_action( 'after_setup_theme', 'halyard_theme_setup' );
  * Enqueues styles and scripts for the theme.
  */
 function halyard_enqueue_scripts() {
-	wp_enqueue_style( 'halyard-style', get_stylesheet_uri(), array(), '1.0', 'all' );
-	wp_enqueue_script( 'halyard-script', get_template_directory_uri() . '/assets/js/menu.js', null, '1.0', false );
+	$theme   = wp_get_theme();
+	$version = $theme->get( 'Version' );
+
+	wp_enqueue_style( 'halyard-style', get_stylesheet_uri(), array(), $version, 'all' );
+	wp_enqueue_script( 'halyard-script', get_template_directory_uri() . '/assets/js/menu.js', null, $version, false );
 }
 add_action( 'wp_enqueue_scripts', 'halyard_enqueue_scripts' );
 
@@ -63,7 +65,9 @@ add_action( 'wp_enqueue_scripts', 'halyard_enqueue_scripts' );
  */
 function halyard_pll_register_string() {
 	pll_register_string( 'halyard-theme', 'All rights reserved' );
-	pll_register_string( 'halyard-theme', 'Developed with' );
 	pll_register_string( 'halyard-theme', 'by' );
+	pll_register_string( 'halyard-theme', 'Developed with' );
+	pll_register_string( 'halyard-theme', 'Page:' );
+	pll_register_string( 'halyard-theme', 'Search results for: %s' );
 }
 add_action( 'init', 'halyard_pll_register_string' );

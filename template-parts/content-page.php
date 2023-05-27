@@ -17,16 +17,11 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'halyard' ),
+				'before' => '<div class="page-links">' . pll__( 'Page:' ),
 				'after'  => '</div>',
 			)
 		);
 		?>
 	</div>
 
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php edit_post_link( esc_html__( 'Edit', 'halyard' ), '<span class="edit-link">', '</span>' ); ?>
-		</footer>
-	<?php endif; ?>
 </article>

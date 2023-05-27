@@ -9,7 +9,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<div class="post-title">
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 		</div>
 	</header>
 
@@ -21,7 +21,7 @@
 			echo '</div>';
 		}
 
-		the_content();
+		the_excerpt();
 
 		wp_link_pages(
 			array(

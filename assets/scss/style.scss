@@ -30,8 +30,8 @@ Text Domain: halyard
 // -----------------------------------------------------------------------------
 @import "layout/header";
 @import "layout/footer";
-@import "layout/grid";
 @import "layout/main";
+@import "layout/search";
 
 // -----------------------------------------------------------------------------
 // Components: Reusable UI components such as buttons, forms, and navigation
@@ -40,6 +40,7 @@ Text Domain: halyard
 @import "components/forms";
 @import "components/navigation";
 @import "components/alerts";
+@import "components/thumbnail";
 
 // -----------------------------------------------------------------------------
 // Pages: Page-specific styles

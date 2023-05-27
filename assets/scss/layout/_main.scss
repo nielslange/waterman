@@ -25,10 +25,10 @@ main {
 
 		.main-content {
 			flex: 1;
+			margin-bottom: 50px;
 		}
 
 		.main-sidebar {
-			border-left: 1px solid lighten($nord3, 50%);
 			margin-left: 0;
 			padding-left: 0;
 			width: 100%;
@@ -40,9 +40,10 @@ main {
 			flex-direction: row;
 
 			.main-sidebar {
-				width: 250px;
-				padding-left: 20px;
+				border-left: 1px solid lighten($nord3, 50%);
 				margin-left: 20px;
+				padding-left: 20px;
+				width: 250px;
 
 				h2 {
 					font-size: 20px;

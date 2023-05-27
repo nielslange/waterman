@@ -1,6 +1,8 @@
 <?php
 /**
- * The main template file
+ * The template for displaying all pages
+ *
+ * Template Name: Full Width
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -16,7 +18,7 @@ get_header();
 		<?php
 		while ( have_posts() ) :
 			the_post();
-			get_template_part( 'template-parts/content', 'post-excerpt' );
+			get_template_part( 'template-parts/content', 'page' );
 
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
@@ -24,13 +26,6 @@ get_header();
 
 		endwhile;
 		?>
-		</div>
-		<div class="main-sidebar">
-			<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-				<aside id="secondary" class="widget-area">
-						<?php dynamic_sidebar( 'sidebar-1' ); ?>
-				</aside>
-			<?php endif; ?>
 		</div>
 	</div>
 </main>
