@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Halyard
+ * @package Waterman
  * @since 1.0
  * @author Niels Lange
  * @license GPL v2 or later

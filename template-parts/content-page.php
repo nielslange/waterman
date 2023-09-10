@@ -2,7 +2,7 @@
 /**
  * Template part for displaying pages
  *
- * @package Halyard
+ * @package Waterman
  */
 
 ?>

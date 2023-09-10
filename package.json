@@ -1,19 +1,19 @@
 {
-	"name": "halyard",
+	"name": "waterman",
 	"description": "",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"WordPress",
 		"Theme",
-		"Halyard"
+		"Waterman"
 	],
-	"homepage": "https://github.com/nielslange/halyard#readme",
+	"homepage": "https://github.com/nielslange/waterman#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/nielslange/halyard.git"
+		"url": "git+https://github.com/nielslange/waterman.git"
 	},
 	"bugs": {
-		"url": "https://github.com/nielslange/halyard/issues"
+		"url": "https://github.com/nielslange/waterman/issues"
 	},
 	"devDependencies": {
 		"@wordpress/env": "5.15.0",
