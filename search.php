@@ -2,10 +2,11 @@
 /**
  * The template for displaying search results pages
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
  * @package Waterman
  */
+
+// Bail out if Polylang is not active.
+class_exists( 'Polylang' ) || die( 'Polylang not found!' );
 
 get_header();
 ?>
@@ -18,7 +19,7 @@ get_header();
 					<?php
 					/* translators: %s: search query. */
 					printf(
-						pll__( 'Search results for: %s' ),
+						esc_html( pll__( 'Search results for: %s' ) ),
 						'<span><strong>' . get_search_query() . '</strong></span>'
 					);
 					?>
