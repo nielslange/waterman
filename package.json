@@ -17,20 +17,19 @@
 	},
 	"devDependencies": {
 		"@wordpress/env": "5.15.0",
-		"@wordpress/prettier-config": "2.13.0",
-		"@wordpress/stylelint-config": "21.14.0",
-		"browser-sync": "2.29.1",
-		"eslint": "^8.37.0",
-		"node-sass": "8.0.0",
+		"@wordpress/prettier-config": "3.1.0",
+		"browser-sync": "2.29.3",
+		"eslint": "8.52.0",
+		"node-sass": "9.0.0",
 		"nord": "0.2.1",
 		"normalize.css": "^8.0.1",
-		"prettier": "npm:wp-prettier@^2.8.5",
-		"stylelint": "^15.6.0",
+		"prettier": "npm:wp-prettier@3.0.3",
+		"stylelint": "15.11.0",
 		"stylelint-config": "^0.1.1",
-		"stylelint-config-recommended": "^12.0.0",
-		"stylelint-config-recommended-scss": "^11.0.0",
-		"stylelint-prettier": "^3.0.0",
-		"stylelint-scss": "^4.6.0"
+		"stylelint-config-recommended": "13.0.0",
+		"stylelint-config-recommended-scss": "13.0.0",
+		"stylelint-prettier": "4.0.2",
+		"stylelint-scss": "5.2.1"
 	},
 	"scripts": {
 		"build": "node-sass --output-style compressed -o ./ assets/scss",
@@ -38,7 +37,7 @@
 		"phpcs": "composer run phpcs",
 		"phplint": "composer run phplint",
 		"stylelint": "stylelint 'assets/scss/**/*.scss'",
-		"sync": "browser-sync start --proxy 'https://zeilklipper-waterman.test'",
+		"sync": "browser-sync start --proxy 'https://waterman.test'",
 		"watch": "npm run build && npm run build -- --watch",
 		"wp-env": "wp-env"
 	}
