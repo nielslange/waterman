@@ -16,23 +16,23 @@
 		"url": "https://github.com/nielslange/waterman/issues"
 	},
 	"devDependencies": {
-		"@wordpress/env": "5.15.0",
-		"@wordpress/prettier-config": "3.1.0",
+		"@wordpress/env": "8.11.0",
+		"@wordpress/prettier-config": "3.2.0",
 		"browser-sync": "2.29.3",
-		"eslint": "8.52.0",
-		"node-sass": "9.0.0",
+		"eslint": "8.53.0",
 		"nord": "0.2.1",
-		"normalize.css": "^8.0.1",
+		"normalize-scss": "7.0.1",
 		"prettier": "npm:wp-prettier@3.0.3",
+		"sass": "1.69.5",
 		"stylelint": "15.11.0",
-		"stylelint-config": "^0.1.1",
+		"stylelint-config-default": "0.2.0",
 		"stylelint-config-recommended": "13.0.0",
-		"stylelint-config-recommended-scss": "13.0.0",
+		"stylelint-config-recommended-scss": "13.1.0",
 		"stylelint-prettier": "4.0.2",
-		"stylelint-scss": "5.2.1"
+		"stylelint-scss": "5.3.0"
 	},
 	"scripts": {
-		"build": "node-sass --output-style compressed -o ./ assets/scss",
+		"build": "sass --style=compressed --load-path=node_modules/normalize-scss/sass/ assets/scss:.",
 		"phpcbf": "composer run phpcbf",
 		"phpcs": "composer run phpcs",
 		"phplint": "composer run phplint",

@@ -55,7 +55,8 @@ function waterman_enqueue_scripts() {
 	$theme   = wp_get_theme();
 	$version = $theme->get( 'Version' );
 
-	wp_enqueue_style( 'waterman-style', get_stylesheet_uri(), array(), $version, 'all' );
+	// wp_enqueue_style( 'waterman-style', get_stylesheet_uri(), array(), $version, 'all' );
+	wp_enqueue_style( 'waterman-style', get_stylesheet_uri(), array(), time(), 'all' );
 	wp_enqueue_script( 'waterman-script', get_template_directory_uri() . '/assets/js/menu.js', null, $version, false );
 }
 add_action( 'wp_enqueue_scripts', 'waterman_enqueue_scripts' );
