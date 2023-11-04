@@ -13,6 +13,11 @@
  */
 
 /**
+ * Include helper files.
+ */
+require get_template_directory() . '/inc/disallow-comments.php';
+
+/**
  * Sets up theme defaults and registers support for various WordPress features.
  */
 function waterman_theme_setup() {
@@ -55,9 +60,8 @@ function waterman_enqueue_scripts() {
 	$theme   = wp_get_theme();
 	$version = $theme->get( 'Version' );
 
-	// wp_enqueue_style( 'waterman-style', get_stylesheet_uri(), array(), $version, 'all' );
-	wp_enqueue_style( 'waterman-style', get_stylesheet_uri(), array(), time(), 'all' );
-	wp_enqueue_script( 'waterman-script', get_template_directory_uri() . '/assets/js/menu.js', null, $version, false );
+	wp_enqueue_style( 'waterman-style', get_stylesheet_uri(), array(), $version, 'all' );
+	wp_enqueue_script( 'waterman-script', get_template_directory_uri() . '/assets/js/menu.js', null, $version, true );
 }
 add_action( 'wp_enqueue_scripts', 'waterman_enqueue_scripts' );
 
@@ -65,6 +69,11 @@ add_action( 'wp_enqueue_scripts', 'waterman_enqueue_scripts' );
  * Register Polylang translation strings.
  */
 function waterman_pll_register_string() {
+	// Bail out if Polylang is not active.
+	if ( ! class_exists( 'Polylang' ) ) {
+		return;
+	}
+
 	pll_register_string( 'waterman-theme', 'All rights reserved' );
 	pll_register_string( 'waterman-theme', 'by' );
 	pll_register_string( 'waterman-theme', 'Developed with' );
