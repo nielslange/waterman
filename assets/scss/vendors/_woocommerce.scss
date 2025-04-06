@@ -1,0 +1,104 @@
+/* WooCommerce */
+
+.woocommerce,
+.woocommerce-page {
+	.post-thumbnail {
+		margin: 0;
+	}
+
+	div.product {
+		form.cart {
+			margin-bottom: 2em;
+			display: flex;
+
+			input,
+			button {
+				height: 40px !important;
+				padding: 0 10px !important;
+				box-sizing: border-box;
+				margin: 0 !important;
+				vertical-align: unset !important;
+				border-radius: 3px;
+				border: none;
+			}
+
+			input::not(.qty) {
+				background-color: $primary-button-background-color;
+			}
+
+			button {
+				background-color: $secondary-button-background-color;
+
+				&:hover {
+					background-color: $tertiary-button-background-color;
+				}
+			}
+		}
+		div.summary {
+			width: 100%;
+
+			@media screen and (min-width: 768px) {
+				width: calc(48% - 20px);
+			}
+
+			.price {
+				margin-top: 0;
+			}
+
+			.product_meta {
+				.posted_in,
+				.tagged_as {
+					display: block;
+				}
+			}
+		}
+
+		.woocommerce-tabs ul.tabs {
+			display: none;
+		}
+	}
+
+	ul.products li.product {
+		.woocommerce-loop-product__link {
+			border: 0;
+		}
+		.add_to_cart_button {
+			background-color: $secondary-button-background-color;
+			color: $primary-text-color;
+			text-align: center;
+
+			&:hover {
+				background-color: $tertiary-button-background-color;
+			}
+		}
+	}
+
+	.wc-block-grid__products {
+		.wc-block-grid__product-link {
+			border: 0;
+		}
+	}
+}
+
+// Unified button styles for cart and checkout buttons
+.wc-block-cart__submit-button,
+.wc-block-components-checkout-place-order-button,
+.wp-block-button__link {
+	background-color: $secondary-button-background-color;
+	border-radius: 3px;
+	border: 1px solid $secondary-button-background-color;
+	color: $primary-text-color !important;
+
+	&:hover {
+		background-color: $tertiary-button-background-color;
+	}
+}
+
+.editor-styles-wrapper .wc-block-grid__products .wc-block-grid__product .wc-block-components-product-image a,
+.wc-block-components-product-image a {
+	border: 0;
+
+	&:hover {
+		border: 0;
+	}
+}
